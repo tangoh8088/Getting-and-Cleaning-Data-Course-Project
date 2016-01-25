@@ -58,3 +58,7 @@ The set of variables that were estimated from these signals are:
 Based on the project requirements, I am required to extract only the 86 variables with the mean and standard deviation for each measurement:
 + mean(): Mean value
 + std(): Standard deviation
+
+##Cleaning up the data
+
+The data was subsetted to extract only measurements with the mean and standard deviation in the merged data set (from training and test sets). Based on this, the data was reshaped to form the tidy data required.
