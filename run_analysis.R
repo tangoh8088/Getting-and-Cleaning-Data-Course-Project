@@ -50,4 +50,4 @@ newdat$subject <- as.factor(newdat$subject)
 meltnewdat <- melt(newdat, id = c("subject", "activity"))
 newdatave <- dcast(meltnewdat, subject+activity ~ variable,mean)
 
-write.table(newdatave, "tidy.txt")
+write.table(newdatave, "tidy.txt", row.names = FALSE)
