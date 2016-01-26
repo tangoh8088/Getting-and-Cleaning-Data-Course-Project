@@ -40,7 +40,6 @@ featuresnew <- features[featuressub,]
 colsneed <- c(featuressub,562,563)
 newdat <- datset[,colsneed]
 colnames(newdat) <- c(featuresnew$V2, "activity", "subject")
-colnames(newdat) <- tolower(colnames(newdat))
 
 ##Convert activities and subjects into factors
 newdat$activity <- factor(newdat$activity, levels = actlab[,1], labels = actlab[,2])
